@@ -84,12 +84,17 @@ class Solution
             slow = slow.next;
             fast = fast.next.next;
             if(slow==fast){
-                int length = 1;
-                slow = slow.next;
-                while(slow!=fast){
+                int length = 0;
+                // slow = slow.next;
+                // while(slow!=fast){
+                //     length++;
+                //     slow= slow.next;
+                // }
+                // return length;
+                do{
+                    slow = slow.next;
                     length++;
-                    slow= slow.next;
-                }
+                }while(slow!=fast);
                 return length;
             }
         }
