@@ -1,5 +1,7 @@
 class Solution {
     public boolean isHappy(int n) {
+        //int this function we use slow fast apporach
+        
         int slow = n;
         int fast = n;
         do{
@@ -10,6 +12,7 @@ class Solution {
             return true;
         return false;
     }
+    //this function for getting squir of number
     public static int findsquir(int n){
         int ans = 0;
         while(n!=0){
