@@ -29,15 +29,11 @@ class Solution {
             }
             if(counter%2!=0){
             for(int k=1; k<=counter; k++){
-              
                     System.out.print("*");
-               
             }
             }
-            counter++;
-            if(counter%2==0){
-                counter++;
-            }
+          counter = counter+2;
+           
             System.out.println();
         }
     }
